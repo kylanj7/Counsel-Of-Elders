@@ -1,0 +1,76 @@
+Design a comprehensive, production-ready architecture for a globally distributed,
+real-time AI-powered medical diagnosis platform that must handle the following
+requirements simultaneously:
+TECHNICAL REQUIREMENTS:
+
+Process 10 million concurrent patient consultations with sub-100ms latency globally
+Integrate with 50,000+ hospital systems using different protocols (HL7, FHIR, proprietary APIs)
+Run multiple specialized AI models (vision for medical imaging, NLP for patient records,
+predictive analytics for disease progression, drug interaction checking)
+Maintain 99.999% uptime with zero data loss during regional failures
+Handle multi-modal inputs: text, voice (50+ languages), medical images (X-ray, MRI, CT),
+real-time vital signs from IoT devices, genetic data
+
+SECURITY & COMPLIANCE:
+
+HIPAA, GDPR, and regional medical data regulations compliance across 150+ countries
+Zero-knowledge encryption for patient data at rest and in transit
+Quantum-resistant cryptography for long-term data protection
+Real-time anomaly detection and automated threat response
+Audit trails for every data access with 10-year retention
+Air-gapped disaster recovery with RPO < 1 second
+
+DATA CHALLENGES:
+
+Process and correlate 50TB of new medical data per hour
+Real-time analysis of streaming genomic sequences (3 billion base pairs per patient)
+Federated learning across hospitals without centralizing sensitive data
+Maintain data lineage and provenance for regulatory audits
+Real-time data quality validation and bias detection in AI predictions
+
+OPERATIONAL CONSTRAINTS:
+
+Deploy across hybrid cloud (AWS, Azure, GCP) and on-premise data centers
+Cost optimization with auto-scaling that considers medical urgency levels
+Carbon-neutral operations with renewable energy prioritization
+Continuous deployment with A/B testing of AI models without patient risk
+Automated compliance certification and reporting
+
+QUANTUM COMPUTING INTEGRATION:
+
+Leverage quantum computing for drug interaction simulation and molecular modeling
+Hybrid classical-quantum workflows for real-time and batch processing
+Error correction and noise mitigation strategies
+Fallback to classical systems when quantum resources unavailable
+
+EDGE CASES & ETHICAL CONSIDERATIONS:
+
+Handle contradictory AI model predictions with explainable arbitration
+Prioritization algorithm for resource allocation during pandemic-scale surges
+Bias mitigation across demographic groups with different baseline data availability
+Graceful degradation when partial system failures occur during critical diagnoses
+Human-in-the-loop protocols for high-stakes decisions
+Transparency reporting for AI decision-making to patients and doctors
+
+ADDITIONAL CONSTRAINTS:
+
+System must work in low-bandwidth environments (rural hospitals, disaster zones)
+Offline-first architecture for areas with unreliable connectivity
+Integration with existing legacy systems (some 30+ years old)
+Support for emerging technologies (AR/VR for surgical planning, brain-computer interfaces)
+Regulatory approval pathway for AI model updates
+
+YOUR TASK:
+Provide a detailed architectural design addressing ALL of these requirements.
+For each technical domain, discuss:
+
+Specific technology choices and why
+Trade-offs and alternative approaches
+Failure modes and mitigation strategies
+Performance optimization techniques
+Cost-benefit analysis
+Timeline and phased implementation approach
+
+Be specific about protocols, frameworks, algorithms, and implementation details.
+Consider interactions between different components and potential conflicts.
+Address both the happy path and edge cases.
